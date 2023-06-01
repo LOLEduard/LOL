@@ -261,7 +261,7 @@ function Keysys:MakeUI(KeySettings)
                 if KeyMain.Input.InputBox.Text ==
                     game:HttpGet("https://1.kelprepl.repl.co/verify/" ..
                         KeySettings.KeyLinkName .. "?verify_key=" .. KeyMain.Input.InputBox.Text) then -- checkkey no have file
-                    loadstring(game:HttpGet(KeySettings.ScriptLink))()
+                    KeySettings.ScriptLink()
                     appendfile(KeySettings.FileKey, KeyMain.Input.InputBox.Text);
                     notif:Notification("Sucefful", "Key valid lets start", 3)
                     TweenService:Create(KeyMain, TweenInfo.new(0.6, Enum.EasingStyle.Quint),
