@@ -1,0 +1,472 @@
+queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLEduard/qwertyuiop/main/oiuygasiuhdfsa?token=GHSAT0AAAAAABZUG7SUG7FUUKGA46WKESKOZETA3CA"))()')
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Tabs = Instance.new("Folder")
+local MainTab = Instance.new("Folder")
+local GameIMG = Instance.new("ImageLabel")
+local UICorner = Instance.new("UICorner")
+local GameName = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local GroupCategory = Instance.new("Folder")
+local GameCategory = Instance.new("TextLabel")
+local CopyPlaceId = Instance.new("ImageButton")
+local UICorner_3 = Instance.new("UICorner")
+local CopyJobId = Instance.new("ImageButton")
+local UICorner_4 = Instance.new("UICorner")
+local CopyGameName = Instance.new("ImageButton")
+local UICorner_5 = Instance.new("UICorner")
+local ServerCategory = Instance.new("Folder")
+local ServerCategory_2 = Instance.new("TextLabel")
+local RejoinServer = Instance.new("ImageButton")
+local UICorner_6 = Instance.new("UICorner")
+local SwitchServer = Instance.new("ImageButton")
+local UICorner_7 = Instance.new("UICorner")
+local JoinSmallServer = Instance.new("ImageButton")
+local UICorner_8 = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local Frame_3 = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner_11 = Instance.new("UICorner")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local Displayname = Instance.new("TextLabel")
+local Username = Instance.new("TextLabel")
+local JoinDate = Instance.new("TextLabel")
+local Fade = Instance.new("ImageLabel")
+local ButtonInfo = Instance.new("TextLabel")
+local UICorner_12 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = gethui()
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Tabs.Name = "Tabs"
+Tabs.Parent = ScreenGui
+
+MainTab.Name = "MainTab"
+MainTab.Parent = Tabs
+
+GameIMG.Name = "GameIMG"
+GameIMG.Parent = MainTab
+GameIMG.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+GameIMG.Position = UDim2.new(0.0500000007, 0, 0.0500000007, 0)
+GameIMG.Size = UDim2.new(0.275000006, 0, 0.300000012, 0)
+
+UICorner.CornerRadius = UDim.new(0.200000003, 0)
+UICorner.Parent = GameIMG
+
+GameName.Name = "GameName"
+GameName.Parent = GameIMG
+GameName.AnchorPoint = Vector2.new(0.5, 1)
+GameName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GameName.BackgroundTransparency = 1.000
+GameName.Position = UDim2.new(0.5, 0, 1, 0)
+GameName.Size = UDim2.new(0.899999976, 0, 0.25, 0)
+GameName.Font = Enum.Font.SourceSansBold
+GameName.Text = "Game Name"
+GameName.TextColor3 = Color3.fromRGB(22, 22, 22)
+GameName.TextScaled = true
+GameName.TextSize = 14.000
+GameName.TextWrapped = true
+GameName.TextXAlignment = Enum.TextXAlignment.Left
+
+Frame.Parent = MainTab
+Frame.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Frame.Position = UDim2.new(0.0500000007, 0, 0.37499997, 0)
+Frame.Size = UDim2.new(0.200000003, 0, 0.475918144, 0)
+
+UICorner_2.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_2.Parent = Frame
+
+GroupCategory.Name = "GroupCategory"
+GroupCategory.Parent = Frame
+
+GameCategory.Name = "GameCategory"
+GameCategory.Parent = GroupCategory
+GameCategory.AnchorPoint = Vector2.new(0.5, 0.5)
+GameCategory.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GameCategory.BackgroundTransparency = 1.000
+GameCategory.Position = UDim2.new(0.5, 0, 0.0799999982, 0)
+GameCategory.Size = UDim2.new(0, 200, 0, 50)
+GameCategory.Font = Enum.Font.SourceSansBold
+GameCategory.Text = "Game"
+GameCategory.TextColor3 = Color3.fromRGB(200, 200, 200)
+GameCategory.TextScaled = true
+GameCategory.TextSize = 14.000
+GameCategory.TextWrapped = true
+
+CopyPlaceId.Name = "CopyPlaceId"
+CopyPlaceId.Parent = GroupCategory
+CopyPlaceId.AnchorPoint = Vector2.new(1, 0.5)
+CopyPlaceId.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+CopyPlaceId.Position = UDim2.new(0.949999988, 0, 0.200000003, 0)
+CopyPlaceId.Size = UDim2.new(0.286000013, 0, 0.111000001, 0)
+CopyPlaceId.Image = "rbxasset://textures/StudioToolbox/AssetConfig/copy_2x.png"
+CopyPlaceId.ScaleType = Enum.ScaleType.Fit
+
+UICorner_3.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_3.Parent = CopyPlaceId
+
+CopyJobId.Name = "CopyJobId"
+CopyJobId.Parent = GroupCategory
+CopyJobId.AnchorPoint = Vector2.new(0.5, 0.5)
+CopyJobId.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+CopyJobId.Position = UDim2.new(0.5, 0, 0.200000003, 0)
+CopyJobId.Size = UDim2.new(0.286000013, 0, 0.111000001, 0)
+CopyJobId.Image = "rbxasset://textures/StudioToolbox/AssetConfig/copy_2x.png"
+CopyJobId.ScaleType = Enum.ScaleType.Fit
+
+UICorner_4.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_4.Parent = CopyJobId
+
+CopyGameName.Name = "CopyGameName"
+CopyGameName.Parent = GroupCategory
+CopyGameName.AnchorPoint = Vector2.new(0, 0.5)
+CopyGameName.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+CopyGameName.Position = UDim2.new(0.0500000007, 0, 0.200000003, 0)
+CopyGameName.Size = UDim2.new(0.286458343, 0, 0.111111112, 0)
+CopyGameName.Image = "rbxasset://textures/StudioToolbox/AssetConfig/copy_2x.png"
+CopyGameName.ScaleType = Enum.ScaleType.Fit
+
+UICorner_5.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_5.Parent = CopyGameName
+
+ServerCategory.Name = "ServerCategory"
+ServerCategory.Parent = Frame
+
+ServerCategory_2.Name = "ServerCategory"
+ServerCategory_2.Parent = ServerCategory
+ServerCategory_2.AnchorPoint = Vector2.new(0.5, 0.5)
+ServerCategory_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ServerCategory_2.BackgroundTransparency = 1.000
+ServerCategory_2.Position = UDim2.new(0.5, 0, 0.349999994, 0)
+ServerCategory_2.Size = UDim2.new(0, 200, 0, 50)
+ServerCategory_2.Font = Enum.Font.SourceSansBold
+ServerCategory_2.Text = "Server"
+ServerCategory_2.TextColor3 = Color3.fromRGB(200, 200, 200)
+ServerCategory_2.TextScaled = true
+ServerCategory_2.TextSize = 14.000
+ServerCategory_2.TextWrapped = true
+
+RejoinServer.Name = "RejoinServer"
+RejoinServer.Parent = ServerCategory
+RejoinServer.AnchorPoint = Vector2.new(0, 0.5)
+RejoinServer.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+RejoinServer.Position = UDim2.new(0.0500000007, 0, 0.474999994, 0)
+RejoinServer.Size = UDim2.new(0.286458343, 0, 0.111111112, 0)
+RejoinServer.Image = "rbxassetid://3926307971"
+RejoinServer.ImageRectOffset = Vector2.new(244, 324)
+RejoinServer.ImageRectSize = Vector2.new(36, 36)
+RejoinServer.ScaleType = Enum.ScaleType.Fit
+
+UICorner_6.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_6.Parent = RejoinServer
+
+SwitchServer.Name = "SwitchServer"
+SwitchServer.Parent = ServerCategory
+SwitchServer.AnchorPoint = Vector2.new(1, 0.5)
+SwitchServer.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+SwitchServer.Position = UDim2.new(0.949999988, 0, 0.474999994, 0)
+SwitchServer.Size = UDim2.new(0.286000013, 0, 0.111000001, 0)
+SwitchServer.Image = "rbxassetid://3926307971"
+SwitchServer.ImageRectOffset = Vector2.new(164, 44)
+SwitchServer.ImageRectSize = Vector2.new(36, 36)
+SwitchServer.ScaleType = Enum.ScaleType.Fit
+
+UICorner_7.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_7.Parent = SwitchServer
+
+JoinSmallServer.Name = "JoinSmallServer"
+JoinSmallServer.Parent = ServerCategory
+JoinSmallServer.AnchorPoint = Vector2.new(0.5, 0.5)
+JoinSmallServer.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+JoinSmallServer.Position = UDim2.new(0.5, 0, 0.474999994, 0)
+JoinSmallServer.Size = UDim2.new(0.286000013, 0, 0.111000001, 0)
+JoinSmallServer.Image = "rbxassetid://6764432408"
+JoinSmallServer.ImageRectOffset = Vector2.new(150, 200)
+JoinSmallServer.ImageRectSize = Vector2.new(50, 50)
+JoinSmallServer.ScaleType = Enum.ScaleType.Fit
+
+UICorner_8.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_8.Parent = JoinSmallServer
+
+Frame_2.Parent = MainTab
+Frame_2.AnchorPoint = Vector2.new(1, 0)
+Frame_2.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+Frame_2.Position = UDim2.new(0.949999988, 0, 0.0500000007, 0)
+Frame_2.Size = UDim2.new(0.284999996, 0, 0.224999994, 0)
+
+UICorner_9.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_9.Parent = Frame_2
+
+Frame_3.Parent = Frame_2
+Frame_3.AnchorPoint = Vector2.new(0, 0.5)
+Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_3.Position = UDim2.new(0.0500000007, 0, 0.5, 0)
+Frame_3.Size = UDim2.new(0.390625, 0, 0.83410567, 0)
+
+UICorner_10.CornerRadius = UDim.new(1, 0)
+UICorner_10.Parent = Frame_3
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(77, 77, 77)), ColorSequenceKeypoint.new(0.45, Color3.fromRGB(44, 44, 44)), ColorSequenceKeypoint.new(0.60, Color3.fromRGB(44, 44, 44)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient.Rotation = 45
+UIGradient.Parent = Frame_3
+
+ImageLabel.Parent = Frame_3
+ImageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
+ImageLabel.Size = UDim2.new(1, -25, 1, -25)
+
+UICorner_11.CornerRadius = UDim.new(1, 0)
+UICorner_11.Parent = ImageLabel
+
+UIAspectRatioConstraint.Parent = Frame_3
+
+Displayname.Name = "Displayname"
+Displayname.Parent = Frame_2
+Displayname.AnchorPoint = Vector2.new(0, 1)
+Displayname.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Displayname.BackgroundTransparency = 1.000
+Displayname.Position = UDim2.new(0.49000001, 0, 0.400000006, 0)
+Displayname.Size = UDim2.new(0.5, 0, 0.185000002, 0)
+Displayname.Font = Enum.Font.SourceSansBold
+Displayname.Text = "DisplayName"
+Displayname.TextColor3 = Color3.fromRGB(255, 255, 255)
+Displayname.TextScaled = true
+Displayname.TextSize = 14.000
+Displayname.TextWrapped = true
+Displayname.TextXAlignment = Enum.TextXAlignment.Left
+
+Username.Name = "Username"
+Username.Parent = Frame_2
+Username.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Username.BackgroundTransparency = 1.000
+Username.Position = UDim2.new(0.49000001, 0, 0.400000006, 0)
+Username.Size = UDim2.new(0.5, 0, 0.140000001, 0)
+Username.Font = Enum.Font.SourceSans
+Username.Text = "@Username"
+Username.TextColor3 = Color3.fromRGB(200, 200, 200)
+Username.TextScaled = true
+Username.TextSize = 14.000
+Username.TextWrapped = true
+Username.TextXAlignment = Enum.TextXAlignment.Left
+
+JoinDate.Name = "JoinDate"
+JoinDate.Parent = Frame_2
+JoinDate.AnchorPoint = Vector2.new(0, 1)
+JoinDate.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JoinDate.BackgroundTransparency = 1.000
+JoinDate.Position = UDim2.new(0.474999994, 0, 0.800000012, 0)
+JoinDate.Size = UDim2.new(0.5, 0, 0.150000006, 0)
+JoinDate.Font = Enum.Font.SourceSansBold
+JoinDate.Text = "Join Date: 0/0/0000"
+JoinDate.TextColor3 = Color3.fromRGB(255, 255, 255)
+JoinDate.TextScaled = true
+JoinDate.TextSize = 14.000
+JoinDate.TextWrapped = true
+JoinDate.TextXAlignment = Enum.TextXAlignment.Left
+
+Fade.Name = "Fade"
+Fade.Parent = Tabs
+Fade.AnchorPoint = Vector2.new(0.5, 0.5)
+Fade.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fade.BackgroundTransparency = 1.000
+Fade.Position = UDim2.new(0.5, 0, 0.5, 0)
+Fade.Size = UDim2.new(1, 0, 1, 0)
+Fade.Image = "http://www.roblox.com/asset/?id=13242818340"
+Fade.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Fade.ImageTransparency = 0.400
+
+ButtonInfo.Name = "ButtonInfo"
+ButtonInfo.Parent = Tabs
+ButtonInfo.AnchorPoint = Vector2.new(0, 0.5)
+ButtonInfo.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+ButtonInfo.BackgroundTransparency = 1.000
+ButtonInfo.Position = UDim2.new(0.75, 0, 0.899999976, 0)
+ButtonInfo.Size = UDim2.new(0.200000003, 0, 0.075000003, 0)
+ButtonInfo.Font = Enum.Font.ArialBold
+ButtonInfo.Text = "ButtonInfo"
+ButtonInfo.TextColor3 = Color3.fromRGB(255, 255, 255)
+ButtonInfo.TextSize = 25.000
+ButtonInfo.TextWrapped = true
+
+UICorner_12.Parent = ButtonInfo
+
+-- Scripts:
+
+local function KQNAJIU_fake_script() -- GameIMG.LocalScript 
+	local script = Instance.new('LocalScript', GameIMG)
+
+	script.Parent.Image = "http://www.roblox.com/Thumbs/Asset.ashx?Width=768&Height=432&AssetID="..game.PlaceId
+	script.Parent.GameName.Text = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+end
+coroutine.wrap(KQNAJIU_fake_script)()
+local function DMDPL_fake_script() -- CopyPlaceId.LocalScript 
+	local script = Instance.new('LocalScript', CopyPlaceId)
+
+	local ButtonInfo = script.Parent.Parent.Parent.Parent.Parent.ButtonInfo
+	script.Parent.MouseEnter:Connect(function()
+		ButtonInfo.Text = "Copy PlaceId to Clipboard"
+		ButtonInfo.Visible = true
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		ButtonInfo.Visible = false
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		local COPYTHIS = "This is your PlaceId: "..game.PlaceId
+		setclipboard(COPYTHIS)
+	end)
+	
+	
+end
+coroutine.wrap(DMDPL_fake_script)()
+local function MCSCS_fake_script() -- CopyJobId.LocalScript 
+	local script = Instance.new('LocalScript', CopyJobId)
+
+	local ButtonInfo = script.Parent.Parent.Parent.Parent.Parent.ButtonInfo
+	script.Parent.MouseEnter:Connect(function()
+		ButtonInfo.Text = "Copy JobID to Clipboard"
+		ButtonInfo.Visible = true
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		ButtonInfo.Visible = false
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		setclipboard(game.JobId)
+	end)
+	
+end
+coroutine.wrap(MCSCS_fake_script)()
+local function YNHZ_fake_script() -- CopyGameName.LocalScript 
+	local script = Instance.new('LocalScript', CopyGameName)
+
+	local ButtonInfo = script.Parent.Parent.Parent.Parent.Parent.ButtonInfo
+	script.Parent.MouseEnter:Connect(function()
+		ButtonInfo.Text = "Copy Game Name to Clipboard"
+		ButtonInfo.Visible = true
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		ButtonInfo.Visible = false
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		setclipboard(game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name)
+	end)
+	
+end
+coroutine.wrap(YNHZ_fake_script)()
+local function JUWXINO_fake_script() -- RejoinServer.LocalScript 
+	local script = Instance.new('LocalScript', RejoinServer)
+
+	local Servers = game.HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100"))
+	local ButtonInfo = script.Parent.Parent.Parent.Parent.Parent.ButtonInfo
+	
+	script.Parent.MouseEnter:Connect(function()
+		ButtonInfo.Text = "Rejoin Server"
+		ButtonInfo.Visible = true
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		ButtonInfo.Visible = false
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(Servers.data) do
+			if v.id == game.jobId then
+				game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, v.id)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(JUWXINO_fake_script)()
+local function PRZKBO_fake_script() -- SwitchServer.LocalScript 
+	local script = Instance.new('LocalScript', SwitchServer)
+
+	local Servers = game.HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100"))
+	local ButtonInfo = script.Parent.Parent.Parent.Parent.Parent.ButtonInfo
+	
+	script.Parent.MouseEnter:Connect(function()
+		ButtonInfo.Text = "Switch Server"
+		ButtonInfo.Visible = true
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		ButtonInfo.Visible = false
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(Servers.data) do
+			if v.id ~= game.jobId then
+				game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, v.id)
+			end
+		end
+	end)
+	
+	
+end
+coroutine.wrap(PRZKBO_fake_script)()
+local function EKWD_fake_script() -- JoinSmallServer.LocalScript 
+	local script = Instance.new('LocalScript', JoinSmallServer)
+
+	local Servers = game.HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100"))
+	local ButtonInfo = script.Parent.Parent.Parent.Parent.Parent.ButtonInfo
+	
+	script.Parent.MouseEnter:Connect(function()
+		ButtonInfo.Text = "Join Small Server"
+		ButtonInfo.Visible = true
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		ButtonInfo.Visible = false
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(Servers.data) do
+			if v.playing ~= v.maxPlayers then
+				game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, v.id)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(EKWD_fake_script)()
+local function AHMANR_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	
+	-- Fetch the thumbnail
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	-- Set the ImageLabel's content to the user thumbnail
+	local imageLabel = script.Parent
+	imageLabel.Image = content
+	
+end
+coroutine.wrap(AHMANR_fake_script)()
+local function CAJJAS_fake_script() -- Frame_2.LocalScript 
+	local script = Instance.new('LocalScript', Frame_2)
+
+	local joinTime = os.time() - (game:GetService("Players").LocalPlayer.AccountAge*86400)
+	local joinDate = os.date("!*t", joinTime)
+	
+	script.Parent.Displayname.Text = game:GetService("Players").LocalPlayer.DisplayName 
+	script.Parent.Username.Text = "@"..game:GetService("Players").LocalPlayer.Name 
+	script.Parent.JoinDate.Text = "Join Date:  "..joinDate.day.."/"..joinDate.month.."/"..joinDate.year
+end
+coroutine.wrap(CAJJAS_fake_script)()
+local function EZIR_fake_script() -- ButtonInfo.LocalScript 
+	local script = Instance.new('LocalScript', ButtonInfo)
+
+	script.Parent.Visible = false
+end
+coroutine.wrap(EZIR_fake_script)()
